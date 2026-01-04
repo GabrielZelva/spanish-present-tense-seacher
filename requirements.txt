@@ -1,0 +1,6 @@
+shiny
+dill
+regex
+numpy
+conllu
+nltk

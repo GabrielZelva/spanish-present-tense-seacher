@@ -11,7 +11,7 @@ app_ui = ui.page_fluid(
         "What text type is the file?",
         {"normal": "Normal text", "preseea": "PRESEEA"},
     ),
-    ui.input_file("f", "Upload your text:", accept=[".txt"]),
+    ui.input_file("f", "Upload your text in .txt format:", accept=[".txt"]),
     "Future tenses found:",
     ui.output_text_verbatim("text"),
 )

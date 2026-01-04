@@ -4,4 +4,4 @@ regex
 numpy
 conllu
 nltk
-sklearn
+scikit-learn

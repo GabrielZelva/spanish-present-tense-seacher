@@ -27,4 +27,9 @@ The regex pattern: `[a-záéíóúñA-ZÁÉÍÓÚÑ]+((?<!(ad)|(id)|(and))o|(?<!
     - Users may customise the analysis to a really advanced degree.  
     
 - [Spanish Future Tense Searcher](https://swlbj4-gabriel-p0.shinyapps.io/Buscador_de_futuros_interactivo/)
-    - Works in the same way as this program, just for the future tenses. 
+    - Works in the same way as this program, just for the future tenses.
+ 
+## Contact:
+If you have any questions or problems, feel free to contact me at:
+
+GabrielPisvejc@protonmail.com

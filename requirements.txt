@@ -4,3 +4,4 @@ regex
 numpy
 conllu
 nltk
+sklearn

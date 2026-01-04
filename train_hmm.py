@@ -4,6 +4,7 @@ import nltk
 from nltk.tag import hmm
 from collections import Counter
 import dill
+from sklearn.metrics import classification_report, f1_score
 
 def preprocess_data(sentences, vocab = None, threshold = 1):
     data = []
@@ -55,6 +56,21 @@ print(predicted_tags)
 
 accuracy = tagger.accuracy(test_data)
 print(f"Accuracy: {accuracy:.4f}")
+
+all_gold_tags = []
+all_pred_tags = []
+
+for sentence in test_data:
+    words = [word for word, tag in sentence]
+    gold_tags = [tag for word, tag in sentence]
+
+    pred_tags = [tag for word, tag in tagger.tag(words)]
+
+    all_gold_tags.extend(gold_tags)
+    all_pred_tags.extend(pred_tags)
+
+verb_f1 = f1_score(all_gold_tags, all_pred_tags, labels=['VERB'], average='micro')
+print(f"F1 for VERB: {verb_f1:.4f}")
 
 # Save
 with open("hmm_model.pkl", "wb") as f:

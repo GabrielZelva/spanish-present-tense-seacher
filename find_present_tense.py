@@ -11,7 +11,7 @@ corpus = "El perro corre por la escalera. El dueño se enfadará. El gato lo mir
 text_type = "normal"
 
 normal_text_pattern = r"[A-ZÁÉÍÓÚÑ][^.]*\." # This may need to be improved
-preseea_text_pattern = r"[A-Z]{1}:.*.$" # And this as well 
+preseea_text_pattern = r"[A-Z]{1}:.+\.$" # And this as well 
 
 present_pattern = r"[a-záéíóúñA-ZÁÉÍÓÚÑ]+((?<!(ad)|(id)|(and))o|(?<!(ab)|(í)|(ar))as|(?<!(ab)|(í)|(ar))a|(?<!(ab)|(í)|(ár))amos|áis|(?<!(ab)|(í)|(ar))an|[^s]es|[^s]e|[^rs]emos|[^r]éis|[^s]en|imos|ís|y){1}$"
 interest = []
